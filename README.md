@@ -24,6 +24,28 @@ AUTH_SERVICE_URL=<the URL assigned to the auth microservice>
 * Nestjs to build the app
 * MongoDB for data persistence
 
+## Environment for docker-compose
+
+This is the .env to configure for docker-compose. replace the placeholders with actual variables.
+
+```bash
+# .env.example
+# Copy this file to .env and fill in your actual values
+
+# Application
+NODE_ENV=development
+PORT=8080
+
+# Database
+MONGODB_URI=mongodb://mongo:27017/gateway_db
+
+# Authentication
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+
+# Services
+AUTH_SERVICE_URL=<the URL assigned to the auth microservice>
+```
+
 
 ## Key Features
 
